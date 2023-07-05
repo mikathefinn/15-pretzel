@@ -3,6 +3,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: 'Playfair Display', serif;
 }
 a {
   text-decoration: none;
@@ -61,7 +62,60 @@ a {
   margin-inline-end: 2rem;
   margin-inline-start: 2rem;
 }
+.main-article p {
+  margin-block-end: 1rem;
+  line-height: 1.1;
+}
+.bulletproof {
+  line-height: 1.5;
+  word-spacing: 0.8rem;
+  font-size: 1.8rem;
+}
 
 .pretzel-image img {
   width: 100%;
+  margin-block-end: 1rem;
+}
+
+.callout {
+  background-color: rgb(246, 233, 201);
+  font-weight: 500;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+}
+h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  margin-block-end: 1rem;
+  text-align: center;
+}
+h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-block-end: 1rem;
+}
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-block-end: 2rem;
+}
+.options li {
+  color: rgb(0, 135, 208);
+  text-decoration: underline;
+}
+
+.salt {
+  margin-block-end: 2rem;
+}
+footer {
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer figure {
+  margin: 1rem 0 2rem 0;
 }
