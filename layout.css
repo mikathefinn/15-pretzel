@@ -10,12 +10,18 @@ a {
   color: black;
 }
 .special {
-  background-color: rgb(123, 156, 153);
+  /*background-color: rgb(123, 156, 153);*/
   padding: 1rem;
 }
 .special > p {
   color: rgb(210, 222, 205);
   padding: 0 2rem 0 2rem;
+}
+.specialbg {
+  height: 0.5rem;
+  background-image: url(./assets/special-bg.png);
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 .container {
   background-color: rgb(123, 156, 153);
@@ -28,6 +34,7 @@ a {
 }
 .wrapper {
   background-image: url(assets/grunge.png);
+  background-repeat: no-repeat;
   max-width: 110rem;
   margin: 0 auto;
 }
@@ -42,12 +49,14 @@ a {
   justify-content: center;
   align-items: center;
   margin-block-end: 1rem;
+  padding: 0 2rem 0 2rem;
 }
 
 .navlinks {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .link {
@@ -88,6 +97,9 @@ a {
   padding: 1rem 0 1rem 0;
   text-align: center;
 }
+.sidebar {
+  margin-block-start: 2rem;
+}
 h1 {
   font-size: 1.9rem;
   font-weight: 600;
@@ -122,4 +134,25 @@ footer {
 }
 footer figure {
   margin: 1rem 0 2rem 0;
+}
+
+@media screen and (min-width: 426px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main {
+    display: flex;
+    gap: 2rem;
+  }
+  .main:nth-child(1) {
+    flex-basis: 60%;
+  }
+  .main:nth-child(2) {
+    flex-basis: 40%;
+  }
+  .addon {
+    display: block;
+  }
 }
